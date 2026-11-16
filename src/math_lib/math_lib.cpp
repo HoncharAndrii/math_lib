@@ -42,5 +42,13 @@ namespace MathLib
 		if (b == 0) return a;
 		return GCD(b, a % b);
 	}
+
+    float ThirdAngle(float a1, float a2)
+    {
+        float a3 = 180 - a1 - a2;
+        if (a3 > 0)
+            return a3;
+        return -1;
+    }
 }
 
